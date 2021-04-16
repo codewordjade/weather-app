@@ -19,8 +19,9 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
-    <title>Week 2 Project</title>
+    <title>Jade's Weather App</title>
   </head>
   <body>
     <div class="container">
@@ -34,21 +35,26 @@
           autofocus="on"
         />
         <input type="submit" value="Search" />
+        <button id="current-location-button">Current Location</button>
       </form>
-      <h1>Leeds</h1>
+      <h1></h1>
 
       <h3></h3>
       <div class="weather-box">
         <h2>
           <i class="fas fa-cloud-showers-heavy" id="weather-today"></i>
         </h2>
-        <p class="current-temp">7˚</p>
+        <p class="current-temp"></p>
         <hr />
         <p>
           8˚ / 5˚
           <br />
-          Heavy showers
+          <span id="description">Heavy showers</span>
         </p>
+        <ul>
+          <li>Humidity: <span id="humidity">13</span>%</li>
+          <li>Wind: <span id="wind">6</span>kmh</li>
+        </ul>
       </div>
       <br />
       <div class="next-5-days">
