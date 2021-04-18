@@ -29,6 +29,10 @@ footer {
   font-size: 10px;
 }
 
+ul {
+  list-style: none;
+}
+
 .current-temp {
   font-size: 70px;
 }
